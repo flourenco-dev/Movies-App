@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_search_outlined"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/searchInputIconImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_search"
+                android:tint="@color/iconSearchColor" />
+
+            <ProgressBar
+                android:id="@+id/searchInputProgressBar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/accentColor"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchInputEditText"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:imeOptions="actionSearch"
+            android:inputType="textAutoComplete"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/textSearchTextColor"
+            android:textColorHint="@color/textSearchHintColor"
+            android:textSize="18sp"
+            tools:hint="Searchable text" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/searchInputCancelButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="?selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/ic_close"
+            android:tint="@color/iconSearchColor"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+</merge>

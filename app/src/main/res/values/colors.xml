@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textShowTitleColor">#DDDDDD</color>
+    <color name="textShowRatingColor">#BBBBBB</color>
+    <color name="textShowDescriptionColor">#DDDDDD</color>
+
+    <color name="textDetailTitleColor">#222222</color>
+    <color name="textDetailSectionHeaderColor">#BBBBBB</color>
+    <color name="textDetailSectionItemColor">#555555</color>
+
+    <color name="lineColor">#BBBBBB</color>
+    <color name="buttonColor">#DDDDDD</color>
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="overlayColor">#BB000000</color>
+    <color name="accentColor">#49BFBD</color>
+    <color name="primaryColor">#DDDDDD</color>
+    <color name="primaryDarkColor">#222222</color>
+
+    <color name="backgroundSearchViewColor">#DDDDDD</color>
+    <color name="lineSearchViewColor">#BBBBBB</color>
+    <color name="iconSearchColor">#999999</color>
+    <color name="textSearchTextColor">#222222</color>
+    <color name="textSearchHintColor">#BBBBBB</color>
+
+    <color name="textNoResultsColor">#BBBBBB</color>
+
+    <color name="offlineBannerBackgroundColor">#BB555555</color>
+    <color name="textOfflineBannerColor">#BBBBBB</color>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pageShowImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/pageShowInfoOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/overlayColor"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/pageShowTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:textColor="@color/textShowTitleColor"
+            app:layout_constraintTop_toTopOf="@id/pageShowInfoOverlay"
+            tools:text="Movie or series title"/>
+
+        <TextView
+            android:id="@+id/pageShowRatingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAlignment="textStart"
+            android:textSize="11sp"
+            android:textColor="@color/textShowRatingColor"
+            app:layout_constraintTop_toBottomOf="@id/pageShowTitleText"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="7.8/10"/>
+
+        <TextView
+            android:id="@+id/pageShowDurationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:maxLines="1"
+            android:textAlignment="textStart"
+            android:textSize="11sp"
+            android:textColor="@color/textShowRatingColor"
+            app:layout_constraintTop_toTopOf="@id/pageShowRatingText"
+            app:layout_constraintBottom_toBottomOf="@id/pageShowRatingText"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="120 min"/>
+
+        <TextView
+            android:id="@+id/pageShowGenreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAlignment="textStart"
+            android:textSize="11sp"
+            android:textColor="@color/textShowRatingColor"
+            app:layout_constraintTop_toBottomOf="@id/pageShowRatingText"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Action, drama and horror"/>
+
+        <TextView
+            android:id="@+id/pageShowStarsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAlignment="textStart"
+            android:textSize="11sp"
+            android:textColor="@color/textShowRatingColor"
+            app:layout_constraintTop_toBottomOf="@id/pageShowGenreText"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Ryan Reynolds and Scarlett Johansson"/>
+
+        <TextView
+            android:id="@+id/pageShowDescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:ellipsize="end"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            android:maxLines="6"
+            android:textColor="@color/textShowDescriptionColor"
+            app:layout_constraintTop_toBottomOf="@id/pageShowStarsText"
+            app:layout_constraintBottom_toBottomOf="@id/pageShowInfoOverlay"
+            tools:text="Movie or series description, it can have a lot of lines, really a lot, so
+it should be able to ellipsize properly. This is just a test"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

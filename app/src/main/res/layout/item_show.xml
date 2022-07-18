@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/showImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/showInfoOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/overlayColor"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/showTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:textColor="@color/textShowTitleColor"
+            app:layout_constraintTop_toTopOf="@id/showInfoOverlay"
+            tools:text="Movie or series title"/>
+
+        <TextView
+            android:id="@+id/showRatingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAlignment="textStart"
+            android:textSize="11sp"
+            android:textColor="@color/textShowRatingColor"
+            app:layout_constraintTop_toBottomOf="@id/showTitleText"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="7.8/10"/>
+
+        <TextView
+            android:id="@+id/showDurationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:maxLines="1"
+            android:textAlignment="textStart"
+            android:textSize="11sp"
+            android:textColor="@color/textShowRatingColor"
+            app:layout_constraintTop_toTopOf="@id/showRatingText"
+            app:layout_constraintBottom_toBottomOf="@id/showRatingText"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="120 min"/>
+
+        <TextView
+            android:id="@+id/showDescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:textAlignment="textStart"
+            android:gravity="center_vertical|start"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:textColor="@color/textShowDescriptionColor"
+            app:layout_constraintTop_toBottomOf="@id/showRatingText"
+            app:layout_constraintBottom_toBottomOf="@id/showInfoOverlay"
+            tools:text="Movie or series description, it can have a lot of lines, really a lot, so
+it should be able to ellipsize properly. This is just a test"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

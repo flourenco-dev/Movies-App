@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="textDetailTitleColor">#DDDDDD</color>
+    <color name="textDetailSectionHeaderColor">#BBBBBB</color>
+    <color name="textDetailSectionItemColor">#DDDDDD</color>
+
+    <color name="lineColor">#222222</color>
+    <color name="backgroundColor">#000000</color>
+
+    <color name="backgroundSearchViewColor">#000000</color>
+    <color name="lineSearchViewColor">#222222</color>
+    <color name="textSearchTextColor">#DDDDDD</color>
+    <color name="textSearchHintColor">#BBBBBB</color>
+
+    <color name="textNoResultsColor">#DDDDDD</color>
+
+</resources>

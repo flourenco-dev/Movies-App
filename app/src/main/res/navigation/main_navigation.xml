@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/favorites_dest">
+
+    <fragment
+        android:id="@+id/favorites_dest"
+        android:name="com.flourenco.movieschallenge.ui.favorites.FavoritesFragment"
+        android:label="Favorite shows"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/search_dest"
+        android:name="com.flourenco.movieschallenge.ui.search.SearchFragment"
+        android:label="Search for a show"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/trending_dest"
+        android:name="com.flourenco.movieschallenge.ui.trending.TrendingFragment"
+        android:label="Trending right now"
+        tools:layout="@layout/fragment_trending" />
+
+    <fragment
+        android:id="@+id/detail_dest"
+        android:name="com.flourenco.movieschallenge.ui.detail.DetailFragment"
+        tools:layout="@layout/fragment_detail" />
+
+    <action
+        android:id="@+id/navigate_to_detail"
+        app:destination="@+id/detail_dest"
+        app:enterAnim="@anim/slide_in_up"
+        app:exitAnim="@anim/slide_out_down"
+        app:popExitAnim="@anim/slide_out_down" />
+
+</navigation>

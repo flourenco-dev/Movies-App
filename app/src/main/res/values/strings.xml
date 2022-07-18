@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Movies &amp; Series</string>
+    <!-- Main -->
+    <string name="nav_bar_favorites_label">Favorites</string>
+    <string name="nav_bar_search_label">Search</string>
+    <string name="nav_bar_trending_label">Trending</string>
+    <string name="tool_bar_clear_hidden_shows_label">Clear hidden shows</string>
+    <string name="button_ok_label">OK</string>
+    <!-- Search -->
+    <string name="search_hint_label">Input show name</string>
+    <string name="search_no_results_label">No results matching searched name</string>
+    <string name="search_min_chars_not_reached_label">Input at least %d characters to search</string>
+    <!-- Detail Info -->
+    <string name="detail_info_duration_section_label">Duration</string>
+    <string name="detail_info_description_section_label">Description</string>
+    <string name="detail_info_rating_section_label">Rating</string>
+    <string name="detail_info_genres_section_label">Genres</string>
+    <string name="detail_info_type_section_label">Type</string>
+    <string name="detail_info_directors_section_label">Directors</string>
+    <string name="detail_info_writers_section_label">Writers</string>
+    <string name="detail_info_companies_section_label">Companies</string>
+    <string name="detail_info_countries_section_label">Countries</string>
+    <string name="detail_info_stars_section_label">Stars</string>
+    <!-- Detail -->
+    <string name="detail_dialog_request_failed_title">Failed request</string>
+    <string name="detail_dialog_request_failed_message">We were unable to get the detail of the selected show. Please check your connection and try again</string>
+    <!-- Favorites -->
+    <string name="favorites_empty_label">No favorites added yet</string>
+    <!-- Trending -->
+    <string name="trending_no_results_label">Unable to retrieve trending shows</string>
+    <!-- Show -->
+    <string name="show_no_rating_text">No rating</string>
+    <string name="show_no_duration_text">No duration</string>
+    <string name="show_no_description_text">No description for this show</string>
+    <!-- Show Page -->
+    <string name="show_page_no_rating_text">No rating</string>
+    <string name="show_page_no_duration_text">No duration</string>
+    <string name="show_page_no_genres_text">No genres</string>
+    <string name="show_page_no_stars_text">No stars</string>
+    <string name="show_page_no_description_text">No description for this show</string>
+    <string name="offline_banner_label">Connection lost</string>
+</resources>
